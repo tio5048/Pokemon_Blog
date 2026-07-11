@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1200px; height:630px;
+    background:
+      radial-gradient(circle at 85% 20%, rgba(255,140,26,0.35) 0%, rgba(255,140,26,0) 45%),
+      linear-gradient(135deg, #0d1710 0%, #16241a 45%, #1f2f1c 100%);
+    overflow:hidden;
+  }
+  /* leaf-village style emblem: concentric rings */
+  .emblem {
+    position:absolute; right:-90px; top:-90px;
+    width:520px; height:520px; border-radius:50%;
+    border:2px solid rgba(255,166,64,0.18);
+  }
+  .emblem::before {
+    content:""; position:absolute; inset:60px; border-radius:50%;
+    border:2px solid rgba(255,166,64,0.14);
+  }
+  .emblem::after {
+    content:""; position:absolute; inset:120px; border-radius:50%;
+    border:2px solid rgba(255,166,64,0.10);
+  }
+  /* kunai shape accents */
+  .kunai {
+    position:absolute; width:14px; height:150px;
+    background:linear-gradient(180deg,#c9d3d6,#7c8a8f 70%,#4a5457);
+    clip-path:polygon(50% 0%, 100% 22%, 68% 22%, 68% 100%, 32% 100%, 32% 22%, 0% 22%);
+    opacity:0.85;
+  }
+  .kunai.k1 { top:70px; left:90px; transform:rotate(18deg) scale(0.8); opacity:0.5; }
+  .kunai.k2 { bottom:40px; left:150px; transform:rotate(-25deg) scale(0.65); opacity:0.35; }
+
+  .content {
+    position:relative; z-index:2;
+    padding:80px 90px;
+    display:flex; flex-direction:column; justify-content:center;
+    height:100%;
+  }
+  .tag {
+    display:inline-block; align-self:flex-start;
+    padding:8px 22px; margin-bottom:28px;
+    background:rgba(255,140,26,0.15);
+    border:1px solid rgba(255,140,26,0.55);
+    border-radius:999px;
+    color:#ffb15c; font-size:22px; font-weight:700; letter-spacing:2px;
+  }
+  .title-en {
+    font-size:64px; font-weight:800; color:#f4f1e8; letter-spacing:1px;
+    line-height:1.15;
+  }
+  .title-en .x { color:#ff8c1a; padding:0 14px; }
+  .title-kr {
+    margin-top:22px;
+    font-size:38px; font-weight:700; color:#e9e4d4;
+    line-height:1.4;
+  }
+  .title-kr b { color:#ff9d3d; }
+  .sub {
+    margin-top:30px;
+    font-size:24px; color:#a9b6ac; font-weight:500;
+  }
+  .brand {
+    position:absolute; left:90px; bottom:44px;
+    font-size:22px; font-weight:700; color:#7d8c80; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="emblem"></div>
+    <div class="kunai k1"></div>
+    <div class="kunai k2"></div>
+    <div class="content">
+      <span class="tag">COLLABORATION UPDATE</span>
+      <div class="title-en">PUBG MOBILE<span class="x">×</span>NARUTO</div>
+      <div class="title-kr">나뭇잎 마을과 <b>구미 보스전</b>이<br>전장으로 찾아온다</div>
+      <div class="sub">버전 4.5 업데이트 · 배틀그라운드 모바일 × 나루토 질풍전</div>
+    </div>
+    <div class="brand">데일리 게임</div>
+  </div>
+</body>
+</html>
