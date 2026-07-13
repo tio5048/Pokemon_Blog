@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 12% 88%, rgba(34,211,238,0.26) 0%, rgba(34,211,238,0) 42%),
+      linear-gradient(160deg, #061418 0%, #0a1e24 55%, #0d2830 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#a5f3fc; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1f5f9; font-size:34px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#22d3ee; }
+  .grid {
+    margin-top:40px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(34,211,238,0.25);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(34,211,238,0.18);
+    border:1px solid rgba(34,211,238,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#22d3ee; border-radius:2px;
+  }
+  .card h3 { color:#f0f4f8; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#22d3ee; font-size:22px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#8ba0a8; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:36px;
+    color:#4a6870; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">TENNOCON 2026</div>
+    <div class="headline">'워프레임' 최대 확장팩, <b>테노콘 2026</b> 핵심 발표</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">확장팩 '타우'</div>
+        <h3>오리진 시스템 밖 신무대</h3>
+        <p>쌍성계 카지노 도시 '포르낙스'<br>보스 '훈라' 등 신규 세력 등장</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">신규 워프레임 '브리스코'</div>
+        <h3>느와르풍 잠입 캐릭터</h3>
+        <p>익절트 피스톨 '코어크래커'<br>격투 무기 '레인 앤 샤인'</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">가을 '이스블레이드 오브 나린'</div>
+        <h3>포트나이트 컬래버까지</h3>
+        <p>66번째 워프레임·엑스칼리버 스킨<br>소울프레임 신규 콘텐츠 동시 공개</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
