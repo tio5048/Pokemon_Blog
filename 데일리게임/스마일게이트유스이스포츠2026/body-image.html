@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 12% 88%, rgba(74,222,128,0.26) 0%, rgba(74,222,128,0) 42%),
+      linear-gradient(160deg, #06120a 0%, #0a1f11 55%, #0d2614 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#86efac; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1f5f9; font-size:32px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#4ade80; }
+  .grid {
+    margin-top:40px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(74,222,128,0.25);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(74,222,128,0.18);
+    border:1px solid rgba(74,222,128,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#4ade80; border-radius:2px;
+  }
+  .card h3 { color:#f0f4f8; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#4ade80; font-size:22px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#8ba894; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:36px;
+    color:#4a7058; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">유스 e스포츠 페스티벌 2026</div>
+    <div class="headline">전국 <b>3개 권역</b> 확대, 12개사 '콜렉티브 임팩트' 협업</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">12개 기관 참여</div>
+        <h3>파트너십 확대</h3>
+        <p>넥슨재단·슈퍼셀·카카오게임즈 등<br>게임사·IT기업·공공기관 총출동</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">256개 지역아동센터</div>
+        <h3>약 7400명 참여</h3>
+        <p>전국 수도권·충청전라제주·경상권<br>3개 권역으로 나눠 진행</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">5월 → 8월 11일</div>
+        <h3>교육부터 올스타전까지</h3>
+        <p>온라인 교육·예선 거쳐<br>대전 올스타전으로 대장정 마무리</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
