@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 12% 88%, rgba(251,146,60,0.26) 0%, rgba(251,146,60,0) 42%),
+      linear-gradient(160deg, #180d06 0%, #26150a 55%, #301a0d 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#fdba74; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1f5f9; font-size:34px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#fb923c; }
+  .grid {
+    margin-top:40px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(251,146,60,0.25);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(251,146,60,0.18);
+    border:1px solid rgba(251,146,60,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#fb923c; border-radius:2px;
+  }
+  .card h3 { color:#f0f4f8; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#fb923c; font-size:24px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#c0a38a; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:36px;
+    color:#7a5f46; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">DNF MOBILE ARCADE 2026</div>
+    <div class="headline">'던파모바일 2.0' 개편, <b>핵심 변화</b> 한눈에 보기</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">Lv.85→90</div>
+        <h3>최고 레벨 확장</h3>
+        <p>신규 80레벨 장비 체계<br>'인챈트 슬롯' 시스템 도입</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">아처·뮤즈·트래블러</div>
+        <h3>신규 캐릭터·전직</h3>
+        <p>워리어 스킬 구조 전면 개편<br>루크 레이드 솔로 보상 동일화</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">8월 13일</div>
+        <h3>신규 시즌 적용</h3>
+        <p>거래 가능 재화 '골드 코인'<br>증명의 전장 시즌2 개막</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>

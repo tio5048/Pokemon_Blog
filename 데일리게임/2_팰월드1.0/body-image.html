@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 12% 88%, rgba(74,222,128,0.26) 0%, rgba(74,222,128,0) 42%),
+      linear-gradient(160deg, #0a1220 0%, #101d18 55%, #16291f 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#86efac; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1f5f9; font-size:34px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#4ade80; }
+  .grid {
+    margin-top:40px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(74,222,128,0.25);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(74,222,128,0.18);
+    border:1px solid rgba(74,222,128,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#4ade80; border-radius:2px;
+  }
+  .card h3 { color:#f0f4f8; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#4ade80; font-size:26px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#93a3b8; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:36px;
+    color:#5f7089; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">PALWORLD 1.0 OFFICIAL LAUNCH</div>
+    <div class="headline">팰월드 정식 출시 <b>핵심 정보</b> 한눈에 보기</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">4,000만 장</div>
+        <h3>누적 판매량 돌파</h3>
+        <p>얼리 액세스 포함<br>정식 출시 시점 누적 기록</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">약 2년</div>
+        <h3>닌텐도 소송 마무리</h3>
+        <p>2024년 하반기 제소 이후<br>사실상 종결 수순</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">4개 플랫폼</div>
+        <h3>동시 정식 출시</h3>
+        <p>스팀·엑스박스·PS5·맥에서<br>1.0 버전 동시 서비스</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>

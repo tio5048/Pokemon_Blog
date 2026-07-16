@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1200px; height:630px;
+    background:
+      radial-gradient(circle at 85% 15%, rgba(74,222,128,0.28) 0%, rgba(74,222,128,0) 45%),
+      linear-gradient(135deg, #0a1220 0%, #10251d 45%, #142b1e 100%);
+    overflow:hidden;
+  }
+  .emblem {
+    position:absolute; right:-100px; top:-100px;
+    width:520px; height:520px; border-radius:50%;
+    border:2px solid rgba(74,222,128,0.20);
+  }
+  .emblem::before {
+    content:""; position:absolute; inset:60px; border-radius:50%;
+    border:2px solid rgba(74,222,128,0.16);
+  }
+  .emblem::after {
+    content:""; position:absolute; inset:120px; border-radius:50%;
+    border:2px solid rgba(74,222,128,0.12);
+  }
+  .paws { position:absolute; left:40px; bottom:40px; width:420px; height:170px; opacity:0.5; }
+  .paw { position:absolute; width:22px; height:22px; border-radius:50%; background:#4ade80; opacity:.5; }
+
+  .content {
+    position:relative; z-index:2;
+    padding:80px 90px;
+    display:flex; flex-direction:column; justify-content:center;
+    height:100%;
+  }
+  .tag {
+    display:inline-block; align-self:flex-start;
+    padding:8px 22px; margin-bottom:28px;
+    background:rgba(74,222,128,0.15);
+    border:1px solid rgba(74,222,128,0.55);
+    border-radius:999px;
+    color:#86efac; font-size:22px; font-weight:700; letter-spacing:2px;
+  }
+  .title-en {
+    font-size:56px; font-weight:800; color:#f1f5f9; letter-spacing:0.5px;
+    line-height:1.2;
+  }
+  .title-en .hl { color:#4ade80; }
+  .title-kr {
+    margin-top:22px;
+    font-size:38px; font-weight:700; color:#e2e8f0;
+    line-height:1.4;
+  }
+  .title-kr b { color:#4ade80; }
+  .sub {
+    margin-top:30px;
+    font-size:24px; color:#94a3b8; font-weight:500;
+  }
+  .brand {
+    position:absolute; left:90px; bottom:44px;
+    font-size:22px; font-weight:700; color:#64748b; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="emblem"></div>
+    <div class="content">
+      <span class="tag">GAME LAUNCH</span>
+      <div class="title-en">PALWORLD <span class="hl">1.0</span> LAUNCH</div>
+      <div class="title-kr">2년 끈 닌텐도 소송 뒤로하고<br><b>팰월드 정식 출시</b></div>
+      <div class="sub">누적 판매 4,000만 장 돌파 · 스팀·엑스박스·PS5·맥</div>
+    </div>
+    <div class="brand">티오의 게임노트</div>
+  </div>
+</body>
+</html>

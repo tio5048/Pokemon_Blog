@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 12% 88%, rgba(118,185,0,0.26) 0%, rgba(118,185,0,0) 42%),
+      linear-gradient(160deg, #060a05 0%, #0d1a0a 55%, #12240f 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#a3e635; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1f5f9; font-size:31px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#76b900; }
+  .grid {
+    margin-top:38px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(118,185,0,0.25);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(118,185,0,0.18);
+    border:1px solid rgba(118,185,0,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#76b900; border-radius:2px;
+  }
+  .card h3 { color:#f0f4f8; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#76b900; font-size:21px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#8fa085; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:34px;
+    color:#4a5a42; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">30년 전 세가가 살린 엔비디아 · 다시 만난 두 회사</div>
+    <div class="headline">1995년 <b>500만 달러 투자</b>에서 2026년 <b>RTX 스파크</b>까지</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">1995년</div>
+        <h3>세가새턴 투자</h3>
+        <p>이리마지리 쇼이치로의 500만 달러<br>엔비디아 초기 생존의 발판</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">1999년</div>
+        <h3>지포스 256 탄생</h3>
+        <p>RIVA 128을 거쳐 세계 최초 GPU로<br>이어진 기술 계보</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">2026년</div>
+        <h3>RTX 스파크 공개</h3>
+        <p>최대 128GB 메모리·1페타플롭스<br>개인용 AI PC 시대 개막</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>

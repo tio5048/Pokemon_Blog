@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 12% 88%, rgba(255,140,26,0.28) 0%, rgba(255,140,26,0) 42%),
+      linear-gradient(160deg, #10190f 0%, #1a2a17 55%, #223423 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#ff9d3d; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f4f1e8; font-size:34px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#ff8c1a; }
+  .grid {
+    margin-top:40px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,166,64,0.25);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(255,140,26,0.18);
+    border:1px solid rgba(255,140,26,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#ff9d3d; border-radius:2px;
+  }
+  .card h3 { color:#f0ece0; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card p { color:#a9b6ac; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:36px;
+    color:#7d8c80; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">VERSION 4.5 UPDATE HIGHLIGHTS</div>
+    <div class="headline">배틀그라운드 모바일 × 나루토 질풍전<br><b>협업 콘텐츠</b> 한눈에 보기</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <h3>나뭇잎 마을 맵</h3>
+        <p>호카게 바위상, 종말의 계곡 등<br>원작 배경을 그대로 탐험</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <h3>인술 전투</h3>
+        <p>치도리·나선환·그림자 분신술 등<br>대표 인술을 실전에 활용</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <h3>구미 보스전</h3>
+        <p>구미(나인테일)를 상대하는<br>협동형 특별 콘텐츠 신규 추가</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
