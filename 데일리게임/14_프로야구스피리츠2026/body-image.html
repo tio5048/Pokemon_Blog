@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 12% 88%, rgba(255,183,3,0.20) 0%, rgba(255,183,3,0) 42%),
+      linear-gradient(160deg, #050a16 0%, #0a1530 55%, #0f1e40 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#ffd35c; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1f5f9; font-size:31px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#ffb703; }
+  .grid {
+    margin-top:38px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,183,3,0.22);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(255,183,3,0.16);
+    border:1px solid rgba(255,183,3,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#ffb703; border-radius:2px;
+  }
+  .card h3 { color:#f0f4f8; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#ffb703; font-size:21px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#8fa0b8; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:34px;
+    color:#3d4a63; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">17년 만에 돌아온 WBC 모드 · 47경기 · 실명 스타 총출동</div>
+    <div class="headline">언리얼 엔진 5 그래픽 + <b>첫 한글화</b>로 국내 상륙</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">WBC 모드</div>
+        <h3>오타니·이정후 실명</h3>
+        <p>저지·소토·아쿠냐 주니어까지<br>로앤데포 파크 결승 구현</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">흰 공의 기적</div>
+        <h3>고교야구 신규 모드</h3>
+        <p>지명타자(DH) 룰 등<br>실제 고교야구 규정 반영</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">사전예약 혜택</div>
+        <h3>오타니 사무라이재팬</h3>
+        <p>선수 라이선스 + 100만 VP<br>2026년 12월 31일까지</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>

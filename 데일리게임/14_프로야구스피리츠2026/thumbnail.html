@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1200px; height:630px;
+    background:
+      radial-gradient(circle at 85% 12%, rgba(255,183,3,0.22) 0%, rgba(255,183,3,0) 45%),
+      linear-gradient(135deg, #050a16 0%, #0a1530 45%, #0f1e40 100%);
+    overflow:hidden;
+  }
+  .seams {
+    position:absolute; right:-120px; top:-120px;
+    width:520px; height:520px; border-radius:50%;
+    border:2px dashed rgba(255,183,3,0.22);
+  }
+  .seams::before {
+    content:""; position:absolute; inset:60px; border-radius:50%;
+    border:2px dashed rgba(255,183,3,0.16);
+  }
+  .seams::after {
+    content:""; position:absolute; inset:120px; border-radius:50%;
+    border:2px dashed rgba(255,183,3,0.12);
+  }
+  .content {
+    position:relative; z-index:2;
+    padding:76px 90px;
+    display:flex; flex-direction:column; justify-content:center;
+    height:100%;
+  }
+  .tag {
+    display:inline-block; align-self:flex-start;
+    padding:8px 22px; margin-bottom:26px;
+    background:rgba(255,183,3,0.15);
+    border:1px solid rgba(255,183,3,0.55);
+    border-radius:999px;
+    color:#ffd35c; font-size:22px; font-weight:700; letter-spacing:2px;
+  }
+  .title-en {
+    font-size:42px; font-weight:800; color:#f1f5f9; letter-spacing:0.5px;
+    line-height:1.2;
+  }
+  .title-en .hl { color:#ffb703; }
+  .title-kr {
+    margin-top:22px;
+    font-size:34px; font-weight:700; color:#e2e8f0;
+    line-height:1.45;
+  }
+  .title-kr b { color:#ffb703; }
+  .sub {
+    margin-top:28px;
+    font-size:23px; color:#8592a8; font-weight:500;
+  }
+  .brand {
+    position:absolute; left:90px; bottom:44px;
+    font-size:22px; font-weight:700; color:#3d4a63; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="seams"></div>
+    <div class="content">
+      <span class="tag">KONAMI · 국내 첫 한글화</span>
+      <div class="title-en">PRO YAKYU <span class="hl">SPIRITS</span> 2026</div>
+      <div class="title-kr">'프로야구 스피리츠 2026'<br><b>한국 정식 출시</b> 확정</div>
+      <div class="sub">WBC 모드 17년 만에 부활 · 오타니·이정후 실명 등장</div>
+    </div>
+    <div class="brand">티오의 게임노트</div>
+  </div>
+</body>
+</html>
