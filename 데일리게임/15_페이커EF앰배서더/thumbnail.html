@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1200px; height:630px;
+    background:
+      radial-gradient(circle at 85% 12%, rgba(234,179,8,0.26) 0%, rgba(234,179,8,0) 45%),
+      linear-gradient(135deg, #060608 0%, #12100a 45%, #1c1608 100%);
+    overflow:hidden;
+  }
+  .emblem {
+    position:absolute; right:-100px; top:-100px;
+    width:520px; height:520px; border-radius:50%;
+    border:2px solid rgba(234,179,8,0.20);
+  }
+  .emblem::before {
+    content:""; position:absolute; inset:60px; border-radius:50%;
+    border:2px solid rgba(234,179,8,0.16);
+  }
+  .emblem::after {
+    content:""; position:absolute; inset:120px; border-radius:50%;
+    border:2px solid rgba(234,179,8,0.12);
+  }
+  .content {
+    position:relative; z-index:2;
+    padding:76px 90px;
+    display:flex; flex-direction:column; justify-content:center;
+    height:100%;
+  }
+  .tag {
+    display:inline-block; align-self:flex-start;
+    padding:8px 22px; margin-bottom:26px;
+    background:rgba(234,179,8,0.15);
+    border:1px solid rgba(234,179,8,0.55);
+    border-radius:999px;
+    color:#facc15; font-size:22px; font-weight:700; letter-spacing:2px;
+  }
+  .title-en {
+    font-size:42px; font-weight:800; color:#f1f5f9; letter-spacing:0.5px;
+    line-height:1.2;
+  }
+  .title-en .hl { color:#eab308; }
+  .title-kr {
+    margin-top:22px;
+    font-size:34px; font-weight:700; color:#e2e8f0;
+    line-height:1.45;
+  }
+  .title-kr b { color:#eab308; }
+  .sub {
+    margin-top:28px;
+    font-size:23px; color:#9a927f; font-weight:500;
+  }
+  .brand {
+    position:absolute; left:90px; bottom:44px;
+    font-size:22px; font-weight:700; color:#5a5442; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="emblem"></div>
+    <div class="content">
+      <span class="tag">e스포츠 재단(EF) 공식 앰배서더</span>
+      <div class="title-en">FAKER <span class="hl">×</span> EF AMBASSADOR</div>
+      <div class="title-kr">'페이커' 이상혁, <b>호날두·칼센</b>과 나란히</div>
+      <div class="sub">EWC·ENC 게임 앰배서더 · 2028년까지</div>
+    </div>
+    <div class="brand">티오의 게임노트</div>
+  </div>
+</body>
+</html>

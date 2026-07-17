@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 12% 88%, rgba(234,179,8,0.24) 0%, rgba(234,179,8,0) 42%),
+      linear-gradient(160deg, #060608 0%, #12100a 55%, #1c1608 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#facc15; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1f5f9; font-size:31px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#eab308; }
+  .grid {
+    margin-top:38px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(234,179,8,0.25);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(234,179,8,0.18);
+    border:1px solid rgba(234,179,8,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#eab308; border-radius:2px;
+  }
+  .card h3 { color:#f0f4f8; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#eab308; font-size:21px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#a0987f; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:34px;
+    color:#5a5442; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">호날두·칼센에 이어 e스포츠 최초 합류</div>
+    <div class="headline">이상혁, <b>EWC·ENC 게임 앰배서더</b>로 2028년까지 활동</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">2028년까지</div>
+        <h3>앰배서더 임기</h3>
+        <p>EWC·ENC 국제 대회<br>선수 대변·리더십 활동</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">월즈 6회</div>
+        <h3>역대 최다 우승</h3>
+        <p>LCK 10회·MSI 2회 우승<br>10년+ 원클럽맨 T1</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">청룡장 수훈</div>
+        <h3>최초의 e스포츠 선수</h3>
+        <p>2026년 대통령 훈장<br>산업 기여 공로 인정</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
