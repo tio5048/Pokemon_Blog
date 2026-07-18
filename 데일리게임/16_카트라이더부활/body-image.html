@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 12% 88%, rgba(249,115,22,0.26) 0%, rgba(249,115,22,0) 42%),
+      linear-gradient(160deg, #060608 0%, #170e08 55%, #241005 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#fb923c; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1f5f9; font-size:31px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#f97316; }
+  .grid {
+    margin-top:38px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(249,115,22,0.25);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(249,115,22,0.18);
+    border:1px solid rgba(249,115,22,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#f97316; border-radius:2px;
+  }
+  .card h3 { color:#f0f4f8; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#f97316; font-size:21px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#a0947f; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:34px;
+    color:#5a4a3a; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">드리프트 아닌 원작, 이름도 그대로</div>
+    <div class="headline">넥슨, <b>'크레이지레이싱 카트라이더'</b> 신작 명칭 확정</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">2005년 출시</div>
+        <h3>국민 게임 원작 IP</h3>
+        <p>PC방 점유율 1위<br>드리프트 전환 전 원작</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">2023~2025</div>
+        <h3>드리프트 서비스 종료</h3>
+        <p>크로스플랫폼 신작 흥행 부진<br>원작 계승으로 방향 전환</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">부제 없음</div>
+        <h3>원작 이름 그대로 계승</h3>
+        <p>로비 UI 재설계·64비트 전환<br>정기 개발소식지 예고</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
