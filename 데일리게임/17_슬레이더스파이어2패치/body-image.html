@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 8% 92%, rgba(139,92,246,0.24) 0%, rgba(139,92,246,0) 42%),
+      radial-gradient(circle at 95% 0%, rgba(217,70,239,0.18) 0%, rgba(217,70,239,0) 45%),
+      linear-gradient(160deg, #0a0713 0%, #120a1c 55%, #0d0817 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#facc15; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1f5f9; font-size:31px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#d946ef; }
+  .grid {
+    margin-top:38px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(250,204,21,0.22);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(250,204,21,0.16);
+    border:1px solid rgba(250,204,21,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#facc15; border-radius:2px;
+  }
+  .card:nth-child(2) .mark { background:rgba(217,70,239,0.16); border-color:rgba(217,70,239,0.5); }
+  .card:nth-child(2) .mark::after { background:#d946ef; }
+  .card:nth-child(2) .num { color:#e879f9; }
+  .card:nth-child(3) .mark { background:rgba(139,92,246,0.16); border-color:rgba(139,92,246,0.5); }
+  .card:nth-child(3) .mark::after { background:#8b5cf6; }
+  .card:nth-child(3) .num { color:#a78bfa; }
+  .card h3 { color:#f0f4f8; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#facc15; font-size:21px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#928c9e; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:34px;
+    color:#3f3a4a; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">베타 브랜치 패치 v0.109.0</div>
+    <div class="headline">니오우 유물 <b>2종</b> 추가, 전 클래스 밸런스 조정</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">신규 유물 2종</div>
+        <h3>다우징 로드·니오우의 희생</h3>
+        <p>물음표 방 탐색·하이리스크<br>런 초반 선택지 확대</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">5개 클래스</div>
+        <h3>카드·유물 전면 조정</h3>
+        <p>웰레이드 플랜스 리워크<br>에이돌론 소진 방식 개편</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">300만 장+</div>
+        <h3>출시 첫 주 판매 흥행</h3>
+        <p>거의 격주 베타 패치 운영<br>커뮤니티 피드백 즉시 반영</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
