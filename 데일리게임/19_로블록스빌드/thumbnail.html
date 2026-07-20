@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1200px; height:630px;
+    background:
+      radial-gradient(circle at 88% 10%, rgba(56,189,248,0.26) 0%, rgba(56,189,248,0) 42%),
+      radial-gradient(circle at 100% 60%, rgba(251,113,133,0.16) 0%, rgba(251,113,133,0) 46%),
+      radial-gradient(circle at 85% 100%, rgba(45,212,191,0.22) 0%, rgba(45,212,191,0) 44%),
+      linear-gradient(135deg, #060a0f 0%, #0a0f1a 45%, #071013 100%);
+    overflow:hidden;
+  }
+  .cards {
+    position:absolute; right:-40px; top:60px;
+    width:460px; height:460px;
+  }
+  .card {
+    position:absolute;
+    width:150px; height:210px;
+    border-radius:14px;
+    background:linear-gradient(160deg, rgba(56,189,248,0.18), rgba(45,212,191,0.10));
+    border:2px solid rgba(251,113,133,0.32);
+  }
+  .card::before {
+    content:""; position:absolute; inset:14px;
+    border:1px solid rgba(251,113,133,0.20); border-radius:8px;
+  }
+  .card.c1 { transform:rotate(-14deg); top:40px; left:120px; opacity:0.55; }
+  .card.c2 { transform:rotate(6deg); top:10px; left:230px; opacity:0.8; }
+  .card.c3 { transform:rotate(24deg); top:60px; left:320px; opacity:0.4; }
+  .content {
+    position:relative; z-index:2;
+    padding:76px 90px;
+    display:flex; flex-direction:column; justify-content:center;
+    height:100%;
+  }
+  .tag {
+    display:inline-block; align-self:flex-start;
+    padding:8px 22px; margin-bottom:26px;
+    background:rgba(251,113,133,0.14);
+    border:1px solid rgba(251,113,133,0.5);
+    border-radius:999px;
+    color:#fb7185; font-size:22px; font-weight:700; letter-spacing:2px;
+  }
+  .title-en {
+    font-size:40px; font-weight:800; color:#e6f6fb; letter-spacing:0.5px;
+    line-height:1.2;
+  }
+  .title-en .hl { color:#38bdf8; }
+  .title-kr {
+    margin-top:22px;
+    font-size:34px; font-weight:700; color:#d8ecf1;
+    line-height:1.45;
+  }
+  .title-kr b { color:#38bdf8; }
+  .sub {
+    margin-top:28px;
+    font-size:23px; color:#6a8a94; font-weight:500;
+  }
+  .brand {
+    position:absolute; left:90px; bottom:44px;
+    font-size:22px; font-weight:700; color:#233a40; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="cards">
+      <div class="card c1"></div>
+      <div class="card c2"></div>
+      <div class="card c3"></div>
+    </div>
+    <div class="content">
+      <span class="tag">로블록스 신규 AI 도구 · 7월 21일</span>
+      <div class="title-en">TYPE IT, <span class="hl">PLAY IT</span></div>
+      <div class="title-kr">문장 하나로 게임 완성, <b>'빌드'</b> 공개</div>
+      <div class="sub">모바일 AI 창작 도구, 28일 알파 테스트 시작</div>
+    </div>
+    <div class="brand">티오의 게임노트</div>
+  </div>
+</body>
+</html>

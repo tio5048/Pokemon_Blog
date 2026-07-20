@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 8% 92%, rgba(45,212,191,0.20) 0%, rgba(45,212,191,0) 42%),
+      radial-gradient(circle at 95% 0%, rgba(56,189,248,0.22) 0%, rgba(56,189,248,0) 45%),
+      linear-gradient(160deg, #060a0f 0%, #0a0f1a 55%, #071013 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#fb7185; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#e6f6fb; font-size:31px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#38bdf8; }
+  .grid {
+    margin-top:38px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(251,113,133,0.22);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(251,113,133,0.16);
+    border:1px solid rgba(251,113,133,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#fb7185; border-radius:2px;
+  }
+  .card:nth-child(2) .mark { background:rgba(56,189,248,0.16); border-color:rgba(56,189,248,0.5); }
+  .card:nth-child(2) .mark::after { background:#38bdf8; }
+  .card:nth-child(2) .num { color:#7dd3fc; }
+  .card:nth-child(3) .mark { background:rgba(45,212,191,0.16); border-color:rgba(45,212,191,0.5); }
+  .card:nth-child(3) .mark::after { background:#2dd4bf; }
+  .card:nth-child(3) .num { color:#5eead4; }
+  .card h3 { color:#e2f2f5; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#fb7185; font-size:21px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#6a8a94; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:34px;
+    color:#233a40; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">로블록스 AI 창작 도구 '빌드'</div>
+    <div class="headline">모바일에서 <b>문장 하나로</b> 게임 완성</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">7월 16일</div>
+        <h3>빌드 공개</h3>
+        <p>텍스트 프롬프트로<br>배경·캐릭터·사운드 생성</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">7월 28일</div>
+        <h3>알파 테스트</h3>
+        <p>뉴질랜드 우선 시작<br>9세 이상 이용 가능</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">동일 알고리즘</div>
+        <h3>AI 게임도 경쟁</h3>
+        <p>플레이 유지율 기반<br>추천 시스템 그대로 적용</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
