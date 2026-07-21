@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 10% 90%, rgba(234,179,8,0.20) 0%, rgba(234,179,8,0) 42%),
+      radial-gradient(circle at 95% 0%, rgba(220,38,38,0.16) 0%, rgba(220,38,38,0) 45%),
+      linear-gradient(160deg, #05070d 0%, #0a0f1a 55%, #0b0e14 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#fde047; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f1f5f9; font-size:31px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#eab308; }
+  .grid {
+    margin-top:38px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(234,179,8,0.22);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(234,179,8,0.16);
+    border:1px solid rgba(234,179,8,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#eab308; border-radius:2px;
+  }
+  .card:nth-child(2) .mark { background:rgba(220,38,38,0.16); border-color:rgba(220,38,38,0.5); }
+  .card:nth-child(2) .mark::after { background:#dc2626; }
+  .card:nth-child(2) .num { color:#f87171; }
+  .card:nth-child(3) .mark { background:rgba(234,179,8,0.16); border-color:rgba(234,179,8,0.5); }
+  .card:nth-child(3) .mark::after { background:#eab308; }
+  .card:nth-child(3) .num { color:#fde047; }
+  .card h3 { color:#f0f4f8; font-size:20px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#eab308; font-size:21px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#8a9099; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:34px;
+    color:#3a4048; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">붓과 검 컬렉션 2부 공개</div>
+    <div class="headline">문명7, 조선 지도자로 <b>이순신</b> 전격 합류</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">DLC 2부 공개</div>
+        <h3>붓과 검 컬렉션</h3>
+        <p>1부 이후 후속 콘텐츠<br>신규 지도자·문명 추가</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">이순신 리더</div>
+        <h3>조선 신규 지도자 합류</h3>
+        <p>해상 특화 능력 탑재<br>거북선 등 고유 요소 예고</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">역사 고증 화제</div>
+        <h3>팬덤 반응 뜨거워</h3>
+        <p>실존 인물 재현도 주목<br>기존 문명 팬층 기대감 상승</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
