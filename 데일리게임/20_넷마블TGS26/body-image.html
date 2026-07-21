@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 8% 92%, rgba(232,121,249,0.18) 0%, rgba(232,121,249,0) 42%),
+      radial-gradient(circle at 95% 0%, rgba(251,191,36,0.20) 0%, rgba(251,191,36,0) 45%),
+      linear-gradient(160deg, #0f0609 0%, #150a0e 55%, #0d0709 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#fbbf24; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#f5e9ec; font-size:31px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#e879f9; }
+  .grid {
+    margin-top:38px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(251,191,36,0.22);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(251,191,36,0.16);
+    border:1px solid rgba(251,191,36,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#fbbf24; border-radius:2px;
+  }
+  .card:nth-child(2) .mark { background:rgba(232,121,249,0.16); border-color:rgba(232,121,249,0.5); }
+  .card:nth-child(2) .mark::after { background:#e879f9; }
+  .card:nth-child(2) .num { color:#f0abfc; }
+  .card:nth-child(3) .mark { background:rgba(251,191,36,0.16); border-color:rgba(251,191,36,0.5); }
+  .card:nth-child(3) .mark::after { background:#fbbf24; }
+  .card:nth-child(3) .num { color:#fde68a; }
+  .card h3 { color:#f2e2e6; font-size:19px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#fbbf24; font-size:19px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#8a6a72; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:34px;
+    color:#3a2228; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">넷마블 도쿄게임쇼 2026 출품작</div>
+    <div class="headline">신작 3종으로 <b>글로벌 시장</b> 정조준</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">태그 교체형 RPG</div>
+        <h3>샹그릴라 프론티어</h3>
+        <p>인기 IP 기반<br>전투 시스템 재구성</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">오리지널 스토리</div>
+        <h3>나혼자만 레벨업: 카르마</h3>
+        <p>로그라이트 액션<br>무기 조합 빌드업</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">서브컬처 수집형</div>
+        <h3>펄 인 블루</h3>
+        <p>상처 지닌 소녀들과<br>기사단 육성 서사</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
