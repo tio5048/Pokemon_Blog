@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 8% 92%, rgba(56,189,248,0.14) 0%, rgba(56,189,248,0) 42%),
+      radial-gradient(circle at 95% 0%, rgba(249,115,22,0.22) 0%, rgba(249,115,22,0) 45%),
+      linear-gradient(160deg, #050914 0%, #0a1224 55%, #060a16 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#fb923c; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#eef2f8; font-size:31px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#38bdf8; }
+  .grid {
+    margin-top:38px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(249,115,22,0.22);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(249,115,22,0.16);
+    border:1px solid rgba(249,115,22,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#fb923c; border-radius:2px;
+  }
+  .card:nth-child(2) .mark { background:rgba(56,189,248,0.16); border-color:rgba(56,189,248,0.5); }
+  .card:nth-child(2) .mark::after { background:#38bdf8; }
+  .card:nth-child(2) .num { color:#7dd3fc; }
+  .card:nth-child(3) .mark { background:rgba(249,115,22,0.16); border-color:rgba(249,115,22,0.5); }
+  .card:nth-child(3) .mark::after { background:#fb923c; }
+  .card:nth-child(3) .num { color:#fdba74; }
+  .card h3 { color:#eef2f8; font-size:19px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#fb923c; font-size:19px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#5c6a82; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:34px;
+    color:#232d3d; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">NBA·NBPA 공식 라이선스 카드 게임</div>
+    <div class="headline">8개 지역 대상 <b>글로벌 CBT</b> 진행 중</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">7.21 ~ 7.29</div>
+        <h3>테스트 기간</h3>
+        <p>한국 등 8개 지역<br>대상 비공개 테스트</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">PVP · PVE</div>
+        <h3>콘텐츠 구성</h3>
+        <p>아레나·쟁탈전부터<br>길드 RVR 점령전까지</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">거래소 · 클럽</div>
+        <h3>육성·소셜</h3>
+        <p>카드 거래와<br>길드 채팅 지원</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>

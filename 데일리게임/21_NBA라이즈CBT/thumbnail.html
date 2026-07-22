@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1200px; height:630px;
+    background:
+      radial-gradient(circle at 88% 8%, rgba(249,115,22,0.28) 0%, rgba(249,115,22,0) 42%),
+      radial-gradient(circle at 100% 62%, rgba(249,115,22,0.16) 0%, rgba(249,115,22,0) 46%),
+      radial-gradient(circle at 85% 100%, rgba(56,189,248,0.12) 0%, rgba(56,189,248,0) 44%),
+      linear-gradient(135deg, #050914 0%, #0a1224 45%, #060a16 100%);
+    overflow:hidden;
+  }
+  .ball {
+    position:absolute; right:-60px; top:40px;
+    width:420px; height:420px;
+    border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, rgba(249,115,22,0.30), rgba(249,115,22,0.05) 70%);
+    border:2px solid rgba(249,115,22,0.25);
+  }
+  .ball::before {
+    content:""; position:absolute; left:50%; top:0; bottom:0; width:2px;
+    background:rgba(249,115,22,0.22);
+  }
+  .ball::after {
+    content:""; position:absolute; top:50%; left:0; right:0; height:2px;
+    background:rgba(249,115,22,0.22);
+  }
+  .content {
+    position:relative; z-index:2;
+    padding:76px 90px;
+    display:flex; flex-direction:column; justify-content:center;
+    height:100%;
+  }
+  .tag {
+    display:inline-block; align-self:flex-start;
+    padding:8px 22px; margin-bottom:26px;
+    background:rgba(249,115,22,0.14);
+    border:1px solid rgba(249,115,22,0.55);
+    border-radius:999px;
+    color:#fb923c; font-size:22px; font-weight:700; letter-spacing:2px;
+  }
+  .title-en {
+    font-size:40px; font-weight:800; color:#eef2f8; letter-spacing:0.5px;
+    line-height:1.2;
+  }
+  .title-en .hl { color:#38bdf8; }
+  .title-kr {
+    margin-top:22px;
+    font-size:34px; font-weight:700; color:#dbe3ee;
+    line-height:1.45;
+  }
+  .title-kr b { color:#fb923c; }
+  .sub {
+    margin-top:28px;
+    font-size:23px; color:#5c6a82; font-weight:500;
+  }
+  .brand {
+    position:absolute; left:90px; bottom:44px;
+    font-size:22px; font-weight:700; color:#232d3d; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="ball"></div>
+    <div class="content">
+      <span class="tag">NBA 공식 라이선스 · 글로벌 CBT</span>
+      <div class="title-en">COURT MEETS <span class="hl">CARDS</span></div>
+      <div class="title-kr">그라비티, <b>'NBA Rise'</b> 글로벌 지역 CBT 시작</div>
+      <div class="sub">한국 등 8개 지역 · 7월 29일까지 진행</div>
+    </div>
+    <div class="brand">티오의 게임노트</div>
+  </div>
+</body>
+</html>
