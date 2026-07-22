@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1200px; height:630px;
+    background:
+      radial-gradient(circle at 88% 8%, rgba(45,212,191,0.26) 0%, rgba(45,212,191,0) 42%),
+      radial-gradient(circle at 100% 62%, rgba(139,92,246,0.20) 0%, rgba(139,92,246,0) 46%),
+      radial-gradient(circle at 85% 100%, rgba(45,212,191,0.12) 0%, rgba(45,212,191,0) 44%),
+      linear-gradient(135deg, #050b12 0%, #0a1420 45%, #060a14 100%);
+    overflow:hidden;
+  }
+  .ripple {
+    position:absolute; right:-70px; top:50px;
+    width:440px; height:440px;
+    border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, rgba(45,212,191,0.26), rgba(45,212,191,0.04) 70%);
+    border:2px solid rgba(45,212,191,0.22);
+  }
+  .ripple::before {
+    content:""; position:absolute; inset:60px;
+    border-radius:50%;
+    border:2px solid rgba(139,92,246,0.20);
+  }
+  .ripple::after {
+    content:""; position:absolute; inset:130px;
+    border-radius:50%;
+    border:2px solid rgba(45,212,191,0.18);
+  }
+  .content {
+    position:relative; z-index:2;
+    padding:76px 90px;
+    display:flex; flex-direction:column; justify-content:center;
+    height:100%;
+  }
+  .tag {
+    display:inline-block; align-self:flex-start;
+    padding:8px 22px; margin-bottom:26px;
+    background:rgba(45,212,191,0.14);
+    border:1px solid rgba(45,212,191,0.55);
+    border-radius:999px;
+    color:#2dd4bf; font-size:22px; font-weight:700; letter-spacing:2px;
+  }
+  .title-en {
+    font-size:40px; font-weight:800; color:#e9f3f1; letter-spacing:0.5px;
+    line-height:1.2;
+  }
+  .title-en .hl { color:#a78bfa; }
+  .title-kr {
+    margin-top:22px;
+    font-size:34px; font-weight:700; color:#d9e6e3;
+    line-height:1.45;
+  }
+  .title-kr b { color:#2dd4bf; }
+  .sub {
+    margin-top:28px;
+    font-size:23px; color:#587670; font-weight:500;
+  }
+  .brand {
+    position:absolute; left:90px; bottom:44px;
+    font-size:22px; font-weight:700; color:#1c2b28; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="ripple"></div>
+    <div class="content">
+      <span class="tag">스팀·에픽게임즈 정식 출시</span>
+      <div class="title-en">WATER MEETS <span class="hl">SHADOW</span></div>
+      <div class="title-kr">컴투스홀딩스, <b>'페이딩 에코'</b> 글로벌 정식 출시</div>
+      <div class="sub">사막행성 코렐과 그림자 세계를 넘나드는 변신 어드벤처</div>
+    </div>
+    <div class="brand">티오의 게임노트</div>
+  </div>
+</body>
+</html>

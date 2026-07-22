@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 8% 92%, rgba(167,139,250,0.14) 0%, rgba(167,139,250,0) 42%),
+      radial-gradient(circle at 95% 0%, rgba(45,212,191,0.22) 0%, rgba(45,212,191,0) 45%),
+      linear-gradient(160deg, #050b12 0%, #0a1420 55%, #060a14 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#2dd4bf; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#e9f3f1; font-size:31px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#a78bfa; }
+  .grid {
+    margin-top:38px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(45,212,191,0.22);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(45,212,191,0.16);
+    border:1px solid rgba(45,212,191,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#2dd4bf; border-radius:2px;
+  }
+  .card:nth-child(2) .mark { background:rgba(167,139,250,0.16); border-color:rgba(167,139,250,0.5); }
+  .card:nth-child(2) .mark::after { background:#a78bfa; }
+  .card:nth-child(2) .num { color:#c4b5fd; }
+  .card:nth-child(3) .mark { background:rgba(45,212,191,0.16); border-color:rgba(45,212,191,0.5); }
+  .card:nth-child(3) .mark::after { background:#2dd4bf; }
+  .card:nth-child(3) .num { color:#5eead4; }
+  .card h3 { color:#e9f3f1; font-size:19px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#2dd4bf; font-size:19px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#587670; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:34px;
+    color:#1c2b28; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">에메테리아 개발 · 컴투스홀딩스 아시아 배급</div>
+    <div class="headline">인간·물·수증기 <b>변신 어드벤처</b> 정식 출시</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">9개 언어</div>
+        <h3>자막·현지화</h3>
+        <p>한국어 자막 지원<br>음성은 영어로 제공</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">발더스 게이트3</div>
+        <h3>성우진</h3>
+        <p>라스트 오브 어스 파트2 등<br>참여 경력의 성우 캐스팅</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">10% 할인</div>
+        <h3>출시 기념 할인</h3>
+        <p>출시 후 약 2주간<br>할인가로 구매 가능</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
