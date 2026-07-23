@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1200px; height:630px;
+    background:
+      radial-gradient(circle at 88% 8%, rgba(225,29,72,0.24) 0%, rgba(225,29,72,0) 42%),
+      radial-gradient(circle at 100% 62%, rgba(225,29,72,0.14) 0%, rgba(225,29,72,0) 46%),
+      radial-gradient(circle at 85% 100%, rgba(203,213,225,0.14) 0%, rgba(203,213,225,0) 44%),
+      linear-gradient(135deg, #0a0b10 0%, #14161e 45%, #0c0d13 100%);
+    overflow:hidden;
+  }
+  .orb {
+    position:absolute; right:-60px; top:40px;
+    width:420px; height:420px;
+    border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, rgba(203,213,225,0.22), rgba(203,213,225,0.03) 70%);
+    border:2px solid rgba(203,213,225,0.20);
+  }
+  .orb::before {
+    content:""; position:absolute; left:50%; top:14%; bottom:14%; width:2px;
+    background:rgba(225,29,72,0.28);
+    transform:rotate(20deg);
+  }
+  .orb::after {
+    content:""; position:absolute; top:50%; left:14%; right:14%; height:2px;
+    background:rgba(225,29,72,0.28);
+    transform:rotate(20deg);
+  }
+  .content {
+    position:relative; z-index:2;
+    padding:76px 90px;
+    display:flex; flex-direction:column; justify-content:center;
+    height:100%;
+  }
+  .tag {
+    display:inline-block; align-self:flex-start;
+    padding:8px 22px; margin-bottom:26px;
+    background:rgba(225,29,72,0.14);
+    border:1px solid rgba(225,29,72,0.55);
+    border-radius:999px;
+    color:#fb7185; font-size:22px; font-weight:700; letter-spacing:2px;
+  }
+  .title-en {
+    font-size:40px; font-weight:800; color:#eef1f6; letter-spacing:0.5px;
+    line-height:1.2;
+  }
+  .title-en .hl { color:#cbd5e1; }
+  .title-kr {
+    margin-top:22px;
+    font-size:34px; font-weight:700; color:#dbe1ea;
+    line-height:1.45;
+  }
+  .title-kr b { color:#fb7185; }
+  .sub {
+    margin-top:28px;
+    font-size:23px; color:#5c6270; font-weight:500;
+  }
+  .brand {
+    position:absolute; left:90px; bottom:44px;
+    font-size:22px; font-weight:700; color:#26293380; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="orb"></div>
+    <div class="content">
+      <span class="tag">서브컬처 신작 · 2차 CBT</span>
+      <div class="title-en">A NEW <span class="hl">CASE</span> OPENS</div>
+      <div class="title-kr">엘리멘타, <b>'실버 팰리스'</b> 2차 CBT '이분법 테스트' 시작</div>
+      <div class="sub">7월 23일 ~ 8월 13일 · PC 무료 진행</div>
+    </div>
+    <div class="brand">티오의 게임노트</div>
+  </div>
+</body>
+</html>

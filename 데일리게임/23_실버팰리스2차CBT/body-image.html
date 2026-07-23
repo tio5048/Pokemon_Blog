@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1000px; height:560px; overflow:hidden; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+  .stage {
+    position:relative;
+    width:1000px; height:560px;
+    background:
+      radial-gradient(circle at 8% 92%, rgba(203,213,225,0.10) 0%, rgba(203,213,225,0) 42%),
+      radial-gradient(circle at 95% 0%, rgba(225,29,72,0.20) 0%, rgba(225,29,72,0) 45%),
+      linear-gradient(160deg, #0a0b10 0%, #14161e 55%, #0c0d13 100%);
+    padding:56px 64px;
+  }
+  .eyebrow {
+    color:#fb7185; font-size:19px; font-weight:700; letter-spacing:2px;
+  }
+  .headline {
+    margin-top:14px;
+    color:#eef1f6; font-size:31px; font-weight:800; line-height:1.35;
+  }
+  .headline b { color:#cbd5e1; }
+  .grid {
+    margin-top:38px;
+    display:flex; gap:22px;
+  }
+  .card {
+    flex:1;
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(225,29,72,0.22);
+    border-radius:14px;
+    padding:26px 22px;
+  }
+  .card .mark {
+    width:34px; height:34px; border-radius:8px;
+    background:rgba(225,29,72,0.14);
+    border:1px solid rgba(225,29,72,0.5);
+    margin-bottom:16px;
+    position:relative;
+  }
+  .card .mark::after {
+    content:""; position:absolute; inset:9px;
+    background:#fb7185; border-radius:2px;
+  }
+  .card:nth-child(2) .mark { background:rgba(203,213,225,0.14); border-color:rgba(203,213,225,0.5); }
+  .card:nth-child(2) .mark::after { background:#cbd5e1; }
+  .card:nth-child(2) .num { color:#e2e8f0; }
+  .card:nth-child(3) .mark { background:rgba(225,29,72,0.14); border-color:rgba(225,29,72,0.5); }
+  .card:nth-child(3) .mark::after { background:#fb7185; }
+  .card:nth-child(3) .num { color:#fda4af; }
+  .card h3 { color:#eef1f6; font-size:19px; font-weight:700; margin-bottom:8px; }
+  .card .num { color:#fb7185; font-size:19px; font-weight:800; margin-bottom:6px; }
+  .card p { color:#5c6270; font-size:15px; line-height:1.55; }
+  .footer {
+    margin-top:34px;
+    color:#26293380; font-size:16px; font-weight:600; letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="eyebrow">서브컬처 수사 어드벤처 신작</div>
+    <div class="headline">15인 캐릭터로 확장된 <b>2차 CBT</b> 시작</div>
+    <div class="grid">
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">7.23 ~ 8.13</div>
+        <h3>테스트 기간</h3>
+        <p>PC 플랫폼 무료 진행<br>1차 데이터 초기화</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">15인 · 40h+</div>
+        <h3>캐릭터·볼륨</h3>
+        <p>신규 캐릭터 다수 공개<br>확장된 맵·탐험 콘텐츠</p>
+      </div>
+      <div class="card">
+        <div class="mark"></div>
+        <div class="num">다중 분기</div>
+        <h3>수사 스토리</h3>
+        <p>여왕의 죽음을 둘러싼<br>선택형 미스터리 전개</p>
+      </div>
+    </div>
+    <div class="footer">티오의 게임노트</div>
+  </div>
+</body>
+</html>
